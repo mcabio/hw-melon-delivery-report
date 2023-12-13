@@ -11,7 +11,22 @@
 #     print(f"Delivered {count} {melon}s for total of ${amount}")
 # the_file.close()
 
-def day_1
+day_one_deliveries = open("um-deliveries-day-1.txt")
+
+def day_one(day_one_deliveries):
+    for line in day_one_deliveries:
+        line = line.rstrip()
+        words = line.split('|')
+
+        melon = words[0]
+        count = words[1]
+        amount = words[2]
+
+        print(f"Delivered {count} {melon}s for total of ${amount}")
+
+# day_one_deliveries.close()
+        
+day_one(day_one_deliveries)
 
 # print("Day 2")
 # the_file = open("um-deliveries-day-2.txt")
