@@ -41,9 +41,6 @@ day_one_deliveries = open("um-deliveries-day-1.txt")
 day_two_deliveries = open("um-deliveries-day-2.txt")
 day_three_deliveries = open("um-deliveries-day-3.txt")
 
-# deliveries
-
-# print(deliveries)
 
 def day_one(day_one_deliveries):
     for line in day_one_deliveries:
@@ -94,3 +91,4 @@ def day_three(day_three_deliveries):
         amount = words[2]
 
         print(f"Delivered {count} {melon}s for total of ${amount}")
+
